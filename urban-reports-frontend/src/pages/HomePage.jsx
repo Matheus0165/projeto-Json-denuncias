@@ -16,7 +16,7 @@ const GrapeIcon = () => (
 )
 
 const stats = [
-  { num: '+12 mil', label: 'Denúncias recebidas' },
+  { num: '+12 mil', label: 'Ocorrência recebidas' },
   { num: '95%',    label: 'Taxa de encaminhamento' },
   { num: '+30',    label: 'Órgãos parceiros' },
   { num: '+200 mil', label: 'Cidadãos impactados' },
@@ -63,7 +63,7 @@ export default function HomePage() {
               <span style={{ color:'var(--brand)' }}>a uma cidade melhor.</span>
             </h1>
             <p style={{ fontSize:17, color:'var(--text2)', lineHeight:1.7, marginBottom:36, maxWidth:460 }}>
-              O VideEita é o canal direto entre cidadãos e órgãos públicos para denúncias de forma simples, segura e responsável.
+              O VideEita é o canal direto entre cidadãos e órgãos públicos para Ocorrência de forma simples, segura e responsável.
             </p>
             <div style={{ display:'flex', gap:12, flexWrap:'wrap' }}>
               <Link to="/nova-denuncia" style={{ display:'inline-flex', alignItems:'center', gap:8, background:'var(--brand)', color:'white', padding:'13px 24px', borderRadius:10, fontSize:15, fontWeight:600, transition:'all .2s', boxShadow:'0 4px 16px rgba(107,63,160,.3)' }}>
@@ -91,7 +91,7 @@ export default function HomePage() {
               </div>
               <div style={{ background:'var(--bg3)', borderRadius:10, padding:16 }}>
                 <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12 }}>
-                  <span style={{ fontSize:13, fontWeight:600 }}>Denúncias recentes</span>
+                  <span style={{ fontSize:13, fontWeight:600 }}>Ocorrência recentes</span>
                   <span style={{ fontSize:11, color:'var(--brand)', fontWeight:600 }}>Ver mapa →</span>
                 </div>
                 {[

@@ -66,13 +66,13 @@ export default function Navbar() {
       <div style={{ display:'flex', alignItems:'center', gap:8 }}>
         {user ? (
           <>
-            <Link to="/minhas-denuncias" style={{
+            <Link to="/minhas-Ocorrência" style={{
               display:'flex', alignItems:'center', gap:6,
               padding:'7px 14px', borderRadius:8, fontSize:13, fontWeight:500,
               color:'var(--brand)', border:'1px solid var(--brand-border)',
               background:'var(--brand-dim)', transition:'all .15s',
             }}>
-              <LayoutDashboard size={14} /> Minhas denúncias
+              <LayoutDashboard size={14} /> Minhas Ocorrência
             </Link>
             <div style={{ display:'flex', alignItems:'center', gap:6, padding:'6px 10px', background:'var(--bg3)', borderRadius:8, border:'1px solid var(--border)' }}>
               <div style={{ width:24, height:24, borderRadius:'50%', background:'var(--brand)', display:'flex', alignItems:'center', justifyContent:'center' }}>

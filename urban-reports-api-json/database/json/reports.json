@@ -127,5 +127,35 @@
     "anonimo": false,
     "criado_em": "2026-05-21T11:36:44.565Z",
     "atualizado_em": "2026-05-21T11:36:44.565Z"
+  },
+  {
+    "id": "9290244c-0988-4274-8aee-8a6cc4f79583",
+    "titulo": "esse zack é muito bocó",
+    "descricao": "isso ai",
+    "categoria": "sinalizacao",
+    "latitude": -27.009284777144508,
+    "longitude": -51.15167856216431,
+    "imagem_url": "http://localhost:3000/uploads/report-1779453250906-304780762.png",
+    "imagem_public_id": "report-1779453250906-304780762.png",
+    "status": "pendente",
+    "user_id": "9325231b-7b19-48de-afff-4e96fce45e93",
+    "anonimo": true,
+    "criado_em": "2026-05-22T12:34:10.909Z",
+    "atualizado_em": "2026-05-22T12:34:10.909Z"
+  },
+  {
+    "id": "0d795398-666a-4b0e-884e-f58a577ea0a8",
+    "titulo": "asdasd",
+    "descricao": "asdasd",
+    "categoria": "sinalizacao",
+    "latitude": -27.00973403390071,
+    "longitude": -51.14899635314942,
+    "imagem_url": "http://localhost:3000/uploads/report-1779453276203-600090155.png",
+    "imagem_public_id": "report-1779453276203-600090155.png",
+    "status": "pendente",
+    "user_id": "9325231b-7b19-48de-afff-4e96fce45e93",
+    "anonimo": false,
+    "criado_em": "2026-05-22T12:34:36.205Z",
+    "atualizado_em": "2026-05-22T12:34:36.205Z"
   }
 ]

@@ -77,7 +77,7 @@ export default function MapPage() {
       if (filterStatus !== 'todos') params.status = filterStatus
       const { data } = await reportsApi.listar(params)
       setReports(data.data.reports)
-    } catch { toast.error('Erro ao carregar denúncias') }
+    } catch { toast.error('Erro ao carregar Ocorrência') }
     finally { setLoading(false) }
   }, [filterCat, filterStatus])
 
@@ -115,7 +115,7 @@ export default function MapPage() {
         {showFilters && (
           <div className="fade-up" style={{ position:'absolute', top:56, left:'50%', transform:'translateX(-50%)', zIndex:1000, background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:14, padding:20, boxShadow:'var(--shadow-lg)', minWidth:340 }}>
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:14 }}>
-              <span style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:14 }}>Filtrar denúncias</span>
+              <span style={{ fontFamily:'var(--font-display)', fontWeight:700, fontSize:14 }}>Filtrar Ocorrência</span>
               <button onClick={()=>setShowFilters(false)} style={{ background:'none', border:'none', cursor:'pointer', color:'var(--text3)' }}><X size={16}/></button>
             </div>
             <FilterGroup label="Categoria" opts={CATS} val={filterCat} set={setFilterCat} emoji={CAT_EMOJI}/>

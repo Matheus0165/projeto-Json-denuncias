@@ -1,9 +1,0 @@
-# _config.yml
-exclude:
-  - node_modules
-  - urban-reports-frontend/node_modules
-  - urban-reports-api-json/node_modules
-  - vendor
-
-# Garanta que o Jekyll não procure nesses caminhos
-keep_files: []

@@ -62,7 +62,7 @@ export default function LoginPage() {
             {mode === 'login' ? 'Bem-vindo de volta' : 'Criar conta'}
           </h1>
           <p style={{ color:'var(--text3)', fontSize:14, marginBottom:28 }}>
-            {mode === 'login' ? 'Entre para acompanhar suas denúncias.' : 'Junte-se ao VideEita e ajude Videira.'}
+            {mode === 'login' ? 'Entre para acompanhar suas Ocorrência.' : 'Junte-se ao VideEita e ajude Videira.'}
           </p>
 
           {/* Tab switcher */}

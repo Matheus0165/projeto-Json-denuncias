@@ -32,7 +32,7 @@ export default function DashboardPage() {
   useEffect(() => {
     reportsApi.listar()
       .then(r => setReports(r.data.data.reports))
-      .catch(() => toast.error('Erro ao carregar denúncias'))
+      .catch(() => toast.error('Erro ao carregar Ocorrência'))
       .finally(() => setLoading(false))
   }, [])
 
@@ -50,7 +50,7 @@ export default function DashboardPage() {
           </Link>
           <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:14, overflow:'hidden' }}>
             {[
-              { icon:<LayoutDashboard size={15}/>, label:'Minhas denúncias', to:'/minhas-denuncias', active:true },
+              { icon:<LayoutDashboard size={15}/>, label:'Minhas Ocorrência', to:'/minhas-Ocorrência', active:true },
               { icon:<MapPin size={15}/>, label:'Ver no mapa', to:'/mapa', active:false },
             ].map((item,i)=>(
               <Link key={i} to={item.to} style={{ display:'flex', alignItems:'center', gap:10, padding:'13px 16px', fontSize:13, fontWeight:item.active?600:400, color:item.active?'var(--brand)':'var(--text2)', background:item.active?'var(--brand-dim)':'none', borderLeft:item.active?'3px solid var(--brand)':'3px solid transparent', textDecoration:'none', transition:'all .15s' }}>
@@ -88,8 +88,8 @@ export default function DashboardPage() {
         <main>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:24 }}>
             <div>
-              <h1 style={{ fontFamily:'var(--font-display)', fontSize:26, fontWeight:800, letterSpacing:'-0.5px', marginBottom:4 }}>Minhas denúncias</h1>
-              <p style={{ color:'var(--text3)', fontSize:13 }}>Acompanhe o andamento das suas denúncias.</p>
+              <h1 style={{ fontFamily:'var(--font-display)', fontSize:26, fontWeight:800, letterSpacing:'-0.5px', marginBottom:4 }}>Minhas Ocorrência</h1>
+              <p style={{ color:'var(--text3)', fontSize:13 }}>Acompanhe o andamento das suas Ocorrência.</p>
             </div>
             <span style={{ background:'var(--brand-dim)', color:'var(--brand)', fontWeight:700, fontSize:14, padding:'5px 14px', borderRadius:99, border:'1px solid var(--brand-border)' }}>
               {reports.length} total
@@ -112,7 +112,7 @@ export default function DashboardPage() {
           {loading ? (
             <div style={{ textAlign:'center', padding:60 }}>
               <Loader size={28} style={{ animation:'spin .8s linear infinite', color:'var(--brand)', margin:'0 auto 12px', display:'block' }}/>
-              <p style={{ color:'var(--text3)', fontSize:13 }}>Carregando denúncias...</p>
+              <p style={{ color:'var(--text3)', fontSize:13 }}>Carregando Ocorrência...</p>
             </div>
           ) : filtered.length===0 ? (
             <div style={{ textAlign:'center', padding:60, background:'var(--bg2)', borderRadius:16, border:'1px solid var(--border)' }}>

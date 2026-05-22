@@ -95,7 +95,7 @@ export default function NewReportPage() {
             <p style={{ fontSize:12, color:'var(--text3)', marginTop:8 }}>Guarde este número para acompanhar o andamento da sua denúncia.</p>
           </div>
           <div style={{ display:'flex', gap:10 }}>
-            <button onClick={()=>navigate('/minhas-denuncias')} style={{ flex:1, padding:'12px 0', background:'var(--brand)', color:'white', border:'none', borderRadius:10, fontSize:14, fontWeight:600, cursor:'pointer', fontFamily:'var(--font-body)' }}>
+            <button onClick={()=>navigate('/minhas-Ocorrência')} style={{ flex:1, padding:'12px 0', background:'var(--brand)', color:'white', border:'none', borderRadius:10, fontSize:14, fontWeight:600, cursor:'pointer', fontFamily:'var(--font-body)' }}>
               Acompanhar denúncia
             </button>
             <button onClick={()=>{ setStep(0);setCat('');setTitulo('');setDesc('');setPos(null);setImg(null);setPreview(null) }} style={{ flex:1, padding:'12px 0', background:'var(--bg2)', color:'var(--text)', border:'1px solid var(--border)', borderRadius:10, fontSize:14, fontWeight:600, cursor:'pointer', fontFamily:'var(--font-body)' }}>

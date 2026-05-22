@@ -10,7 +10,7 @@ const {
 const { authMiddleware, adminMiddleware } = require('../middlewares/authMiddleware');
 const { upload } = require('../services/uploadService');
 
-// GET /reports — listar denúncias do usuário (admin vê todas)
+// GET /reports — listar Ocorrência do usuário (admin vê todas)
 router.get('/', authMiddleware, getAllReports);
 
 // GET /reports/nearby — buscar por proximidade (filtra por dono; admin vê todas)

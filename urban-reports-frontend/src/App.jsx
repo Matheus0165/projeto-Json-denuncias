@@ -32,7 +32,7 @@ function AppRoutes() {
       <Route path="/entrar"        element={user ? <Navigate to="/mapa" replace /> : <LoginPage />} />
       <Route path="/mapa"          element={<Guard><MapPage /></Guard>} />
       <Route path="/nova-denuncia" element={<Guard><NewReportPage /></Guard>} />
-      <Route path="/minhas-denuncias" element={<Guard><DashboardPage /></Guard>} />
+      <Route path="/minhas-Ocorrência" element={<Guard><DashboardPage /></Guard>} />
       <Route path="*"              element={<Navigate to="/" replace />} />
     </Routes>
   )

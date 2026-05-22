@@ -2,7 +2,7 @@
   "info": {
     "name": "Urban Reports API",
     "_postman_id": "urban-reports-collection",
-    "description": "Coleção de testes para a API de denúncias urbanas",
+    "description": "Coleção de testes para a API de Ocorrência urbanas",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -88,7 +88,7 @@
       }
     },
     {
-      "name": "6. Listar todas as denúncias",
+      "name": "6. Listar todas as Ocorrência",
       "request": {
         "method": "GET",
         "header": [],
@@ -106,7 +106,7 @@
       }
     },
     {
-      "name": "7. Buscar denúncias próximas",
+      "name": "7. Buscar Ocorrência próximas",
       "request": {
         "method": "GET",
         "header": [],

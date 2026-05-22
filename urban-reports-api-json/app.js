@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
     versao: '1.0.0',
     endpoints: {
       usuarios: '/users',
-      denuncias: '/reports',
+      Ocorrência: '/reports',
     },
   });
 });
